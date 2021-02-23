@@ -11,7 +11,7 @@ module.exports = {
     filename: 'server.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json',]
   },
   externals: [nodeExternals()],
   module: {
@@ -21,7 +21,7 @@ module.exports = {
       use: ['ts-loader']
       },
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         use: [
           {
             loader: 'css-loader',
@@ -33,7 +33,7 @@ module.exports = {
               onlyLocals: true,
             }
           },
-          'less-loader',
+          'sass-loader',
         ],
       }
     ]
