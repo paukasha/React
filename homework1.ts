@@ -2,7 +2,7 @@
 type TypeFn = (value: string) => string;
 const ArrowFn: TypeFn = (value) => value.concat( 'Hello ', 'world' );
 
-// №2 Напишите интерфейс
+//№2 Напишите интерфейс
 interface MyHomeTaskInterface {
  howIDoIt: string;
  simeArray: ( string | number )[];
