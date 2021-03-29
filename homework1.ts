@@ -51,6 +51,7 @@ function HomeComponent(props: { firstProp: string }) {
     <div>{ props.firstProp }</div>
   )
 }
+
 interface IProps {
   firstProp: string
 }
