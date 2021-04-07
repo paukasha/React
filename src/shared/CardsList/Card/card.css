@@ -1,0 +1,12 @@
+.card {
+  background-color: var(--white);
+  border-radius: 7px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.card > * {
+  flex: 1 1 100%;
+}
+
+/*# sourceMappingURL=card.css.map */

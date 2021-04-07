@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
 const IS_PROD = NODE_ENV === 'production';
-
+const GLOBAL_CSS_REGEXP = /\.global\.scss$/;
 function setupDevtool() {
   if (IS_PROD) {
     return false;
@@ -51,8 +51,25 @@ module.exports = {
             }
           },
           'sass-loader',
-        ]
-      }
+        ],
+        exclude: GLOBAL_CSS_REGEXP,
+      },
+      {
+        test: GLOBAL_CSS_REGEXP,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              // name: 'src/img/',
+              name: '../src/img/',
+            },
+          },
+        ],
+      },
     ]
   },
   devtool: setupDevtool(),
