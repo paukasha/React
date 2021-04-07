@@ -212,7 +212,7 @@ eval("// Exports\nmodule.exports = {};\n\n\n//# sourceURL=webpack:///./src/share
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.UserImg = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar userimg1_png_1 = __importDefault(__webpack_require__(/*! ./userimg1.png */ \"./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png\"));\r\nvar img1 = __webpack_require__(/*! ./userimg1.png */ \"./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png\");\r\nfunction UserImg() {\r\n    return (react_1.default.createElement(\"img\", { src: userimg1_png_1.default, alt: \"ava\" }));\r\n}\r\nexports.UserImg = UserImg;\r\n\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/UserImg.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.UserImg = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction UserImg() {\r\n    return (react_1.default.createElement(\"div\", null, \"Hello\"));\r\n}\r\nexports.UserImg = UserImg;\r\n\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/UserImg.tsx?");
 
 /***/ }),
 
@@ -225,17 +225,6 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 "use strict";
 eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./UserImg */ \"./src/shared/CardsList/Card/TextContent/UserImg/UserImg.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/index.ts?");
-
-/***/ }),
-
-/***/ "./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png":
-/*!********************************************************************!*\
-  !*** ./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png?");
 
 /***/ }),
 

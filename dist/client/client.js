@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "43ced8faf5c1b8d435d6";
+/******/ 	var hotCurrentHash = "1d482bc40d9add6510ed";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1584,7 +1584,7 @@ eval("var api = __webpack_require__(/*! ../../../../../../node_modules/style-loa
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.UserImg = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar userimg1_png_1 = __importDefault(__webpack_require__(/*! ./userimg1.png */ \"./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png\"));\r\nvar img1 = __webpack_require__(/*! ./userimg1.png */ \"./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png\");\r\nfunction UserImg() {\r\n    return (react_1.default.createElement(\"img\", { src: userimg1_png_1.default, alt: \"ava\" }));\r\n}\r\nexports.UserImg = UserImg;\r\n\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/UserImg.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.UserImg = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nfunction UserImg() {\r\n    return (react_1.default.createElement(\"div\", null, \"Hello\"));\r\n}\r\nexports.UserImg = UserImg;\r\n\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/UserImg.tsx?");
 
 /***/ }),
 
@@ -1597,18 +1597,6 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 "use strict";
 eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./UserImg */ \"./src/shared/CardsList/Card/TextContent/UserImg/UserImg.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/index.ts?");
-
-/***/ }),
-
-/***/ "./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png":
-/*!********************************************************************!*\
-  !*** ./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"C:\\\\src\\\\img\");\n\n//# sourceURL=webpack:///./src/shared/CardsList/Card/TextContent/UserImg/userimg1.png?");
 
 /***/ }),
 
@@ -1910,7 +1898,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\79144\\Desktop\\ReactModule\\src\\client\\index.jsx */\"./src/client/index.jsx\");\nmodule.exports = __webpack_require__(/*! webpack-hot-middleware/client?path=http://localhost:3001/static/__webpack_hmr */\"./node_modules/webpack-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr\");\n\n\n//# sourceURL=webpack:///multi_./src/client/index.jsx_webpack-hot-middleware/client?");
+eval("__webpack_require__(/*! C:\\Users\\79144\\Desktop\\ReactModule\\React\\src\\client\\index.jsx */\"./src/client/index.jsx\");\nmodule.exports = __webpack_require__(/*! webpack-hot-middleware/client?path=http://localhost:3001/static/__webpack_hmr */\"./node_modules/webpack-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr\");\n\n\n//# sourceURL=webpack:///multi_./src/client/index.jsx_webpack-hot-middleware/client?");
 
 /***/ })
 
