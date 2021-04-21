@@ -63,6 +63,10 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              // outputPath: 'static',
+              name: '[path][name].[ext]',
+            }
           },
         ],
       },

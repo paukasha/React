@@ -2,10 +2,10 @@ import React from 'react';
 import styles from './content.scss';
 import { CardsList } from '../CardsList';
 
-export function Content() {
+export function Content(props: any) {
   return (
     <main className={styles.content}>
-      <CardsList/>
+      {props.children}
     </main>
   );
 }

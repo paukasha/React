@@ -1,0 +1,17 @@
+.textContent {
+  padding: 20px;
+  overflow: hidden;
+}
+
+@media all and (min-width: 1024px) {
+  .textContent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .textContent {
+    flex-basis: 672px;
+  }
+}

@@ -12,6 +12,10 @@
   --grey99: hsl(0, 0%, calc(var(--whiteLightness) - 60%));
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -28,6 +32,17 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -36,10 +51,16 @@ ul {
   list-style: none;
 }
 
-h2 {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 700;
+button {
+  background: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .layout {

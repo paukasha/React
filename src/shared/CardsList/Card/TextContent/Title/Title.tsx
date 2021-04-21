@@ -3,7 +3,10 @@ import styles from './title.scss';
 
 export function Title() {
   return (
-    <h2 className={styles.h2__block}>Реализация намеченных плановых заданий</h2>
+    <h2 className={styles.title}>
+      <a href="#user-post">
+        Реализация намеченных плановых заданий Lorem ipsum dolor sit amet.
+      </a></h2>
   );
 }
 // @bem-react/core

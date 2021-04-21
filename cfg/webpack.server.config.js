@@ -48,9 +48,10 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            // options: {
-            //   name: '../src/img/',
-            // },
+            options: {
+              outputPath: 'static',
+              name: '[path][name].[ext]',
+            }
           },
         ],
       },
