@@ -154,7 +154,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.App = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\n__webpack_require__(/*! ./main.global.scss */ \"./src/shared/main.global.scss\");\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"react-hot-loader/root\");\r\nvar Layout_1 = __webpack_require__(/*! ./Layout */ \"./src/shared/Layout/index.ts\");\r\nvar Header_1 = __webpack_require__(/*! ./Header */ \"./src/shared/Header/index.ts\");\r\nvar Content_1 = __webpack_require__(/*! ./Content */ \"./src/shared/Content/index.ts\");\r\nvar CardsList_1 = __webpack_require__(/*! ./CardsList */ \"./src/shared/CardsList/index.ts\");\r\n// import { MyHooks } from './HooksExample';\r\n// import { getValue } from './utils/react/pickFromSyntheticEvent';\r\nfunction AppComponent() {\r\n    return (react_1.default.createElement(Layout_1.Layout, null,\r\n        react_1.default.createElement(Header_1.Header, null),\r\n        react_1.default.createElement(Content_1.Content, null,\r\n            react_1.default.createElement(CardsList_1.CardsList, null))));\r\n}\r\n//\r\n// function AppComponent() {\r\n//   const [isVisible, setIsVisible] = React.useState(false);\r\n//   const [ title, setTitle ] = React.useState('');\r\n//   return (\r\n//     <Layout>\r\n//       <Header />\r\n//       <Content>\r\n//         <CardList />\r\n//           <button onClick={() => setIsVisible(!isVisible)}>Change me!</button>\r\n//           <input type=\"text\" onChange={getValue(setTitle)} />\r\n//           {isVisible && <MyHooks title={title} id=\"11\" /> }\r\n//       </Content>\r\n//     </Layout>\r\n//   );\r\n// }\r\nexports.App = root_1.hot(function () { return react_1.default.createElement(AppComponent, null); });\r\n\n\n//# sourceURL=webpack:///./src/shared/App.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.App = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\n__webpack_require__(/*! ./main.global.scss */ \"./src/shared/main.global.scss\");\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"react-hot-loader/root\");\r\nvar Layout_1 = __webpack_require__(/*! ./Layout */ \"./src/shared/Layout/index.ts\");\r\nvar Header_1 = __webpack_require__(/*! ./Header */ \"./src/shared/Header/index.ts\");\r\nvar Content_1 = __webpack_require__(/*! ./Content */ \"./src/shared/Content/index.ts\");\r\nvar CardsList_1 = __webpack_require__(/*! ./CardsList */ \"./src/shared/CardsList/index.ts\");\r\nvar GenericList_1 = __webpack_require__(/*! ./GenericList */ \"./src/shared/GenericList/index.ts\");\r\nvar generateRandomIndex_1 = __webpack_require__(/*! ../utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\r\nvar LIST = [\r\n    { value: 'some' },\r\n    { value: 'other some' },\r\n    { value: 'some' }\r\n].map(generateRandomIndex_1.generateId);\r\n// было в map (item) => ({ ...item, id: generateRandomString() })\r\n// import { MyHooks } from './HooksExample';\r\n// import { getValue } from './utils/react/pickFromSyntheticEvent';\r\n// function AppComponent() {\r\n//   return (\r\n//     <Layout>\r\n//       <Header />\r\n//       <Content>\r\n//         <CardsList/>\r\n//       </Content>\r\n//     </Layout>\r\n//   );\r\n// }\r\n//\r\nfunction AppComponent() {\r\n    // const [isVisible, setIsVisible] = React.useState(false);\r\n    // const [ title, setTitle ] = React.useState('');\r\n    var handleItemClick = function (id) {\r\n        console.log(id);\r\n    };\r\n    return (react_1.default.createElement(Layout_1.Layout, null,\r\n        react_1.default.createElement(Header_1.Header, null),\r\n        react_1.default.createElement(Content_1.Content, null,\r\n            react_1.default.createElement(CardsList_1.CardsList, null),\r\n            react_1.default.createElement(GenericList_1.MyList, { list: LIST }))));\r\n}\r\nexports.App = root_1.hot(function () { return react_1.default.createElement(AppComponent, null); });\r\n\n\n//# sourceURL=webpack:///./src/shared/App.tsx?");
 
 /***/ }),
 
@@ -718,6 +718,30 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 
 /***/ }),
 
+/***/ "./src/shared/GenericList/GenericList.tsx":
+/*!************************************************!*\
+  !*** ./src/shared/GenericList/GenericList.tsx ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.MyList = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nfunction MyList(_a) {\r\n    var list = _a.list;\r\n    return (react_1.default.createElement(\"ul\", null, list.map(function (item, index) { return (react_1.default.createElement(\"li\", { key: item.id }, item.value)); })));\r\n}\r\nexports.MyList = MyList;\r\n// const jsxs = [\r\n//   <li key={0}>Content One 0</li>,\r\n//   <li key={1}>Content One 1</li>,\r\n//   <li key={2}>Content One 2</li>,\r\n//   <li key={4}>Content One 4</li>,\r\n// ]\r\n\n\n//# sourceURL=webpack:///./src/shared/GenericList/GenericList.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/GenericList/index.ts":
+/*!*****************************************!*\
+  !*** ./src/shared/GenericList/index.ts ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./GenericList */ \"./src/shared/GenericList/GenericList.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/GenericList/index.ts?");
+
+/***/ }),
+
 /***/ "./src/shared/Header/Header.tsx":
 /*!**************************************!*\
   !*** ./src/shared/Header/Header.tsx ***!
@@ -901,6 +925,30 @@ eval("// Exports\nmodule.exports = {\n\t\"container\": \"layout__container--1iMr
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap);\"]);\n// Module\nexports.push([module.i, \":root {\\r\\n  --whiteLightness: 100%;\\r\\n  --black: #333333;\\r\\n  --white: hsl(0, 0%, var(--whiteLightness));\\r\\n  --orange: #cc6633;\\r\\n  --green: #A4cc33;\\r\\n  --greyF3: hsl(0, 0%, calc(var(--whiteLightness) - 4%));\\r\\n  --greyF4: hsl(0, 0%, calc(var(--whiteLightness) - 15%));\\r\\n  --greyD9: hsl(0, 0%, calc(var(--whiteLightness) - 23%));\\r\\n  --greyC4: hsl(0, 0%, calc(var(--whiteLightness) - 40%));\\r\\n  --grey99: hsl(0, 0%, calc(var(--whiteLightness) - 60%));\\r\\n\\r\\n}\\r\\n\\r\\nhtml {\\r\\n  box-sizing: border-box;\\r\\n}\\r\\n\\r\\nbody {\\r\\n  padding: 0;\\r\\n  margin: 0;\\r\\n  background-color: var(--greyF4);\\r\\n  font-size: 16px;\\r\\n  line-height: 16px;\\r\\n  font-family: 'Roboto', serif;\\r\\n  font-style: normal;\\r\\n  font-weight: normal;\\r\\n}\\r\\n\\r\\n* {\\r\\n  color: var(--black);\\r\\n  box-sizing: border-box;\\r\\n  -webkit-font-smoothing: antialiased;\\r\\n  -moz-osx-font-smoothing: grayscale;\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\nimg {\\r\\n  max-width: 100%;\\r\\n}\\r\\n\\r\\na {\\r\\n  text-decoration: none;\\r\\n  color: inherit;\\r\\n}\\r\\n\\r\\nul {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\nbutton {\\r\\n  background: transparent;\\r\\n  outline: none;\\r\\n  border: 0;\\r\\n  cursor: pointer;\\r\\n}\\r\\n\\r\\n\\r\\n.container {\\r\\n  margin: 0 auto;\\r\\n  padding: 0 20px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/main.global.scss?");
+
+/***/ }),
+
+/***/ "./src/utils/js/assoc.ts":
+/*!*******************************!*\
+  !*** ./src/utils/js/assoc.ts ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __assign = (this && this.__assign) || function () {\r\n    __assign = Object.assign || function(t) {\r\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\r\n            s = arguments[i];\r\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\r\n                t[p] = s[p];\r\n        }\r\n        return t;\r\n    };\r\n    return __assign.apply(this, arguments);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.assoc = void 0;\r\nfunction assoc(key, value) {\r\n    return function (obj) {\r\n        var _a;\r\n        return (__assign(__assign({}, obj), (_a = {}, _a[key] = value, _a)));\r\n    };\r\n}\r\nexports.assoc = assoc;\r\n\n\n//# sourceURL=webpack:///./src/utils/js/assoc.ts?");
+
+/***/ }),
+
+/***/ "./src/utils/react/generateRandomIndex.ts":
+/*!************************************************!*\
+  !*** ./src/utils/react/generateRandomIndex.ts ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.generateId = exports.assignId = exports.generateRandomString = void 0;\r\nvar assoc_1 = __webpack_require__(/*! ../js/assoc */ \"./src/utils/js/assoc.ts\");\r\nvar generateRandomString = function () { return Math.random().toString(36).substring(2, 15); };\r\nexports.generateRandomString = generateRandomString;\r\nexports.assignId = assoc_1.assoc('id', exports.generateRandomString()); // здесь generaterandomstring вызывается один раз\r\n//export const generateId = <O extends object>(obj: O) => assoc('id', generateRandomString()); //generaterandomstrimg dspsdftncz каждый раз когда мы вызываем ф-ю\r\nvar generateId = function (obj) { return exports.assignId(obj); };\r\nexports.generateId = generateId;\r\n// теперь каждый рахз мы .eltv dspsdfnm a-. assugnid в которую будем передавать  наш объект и который будет  сливать их вместе\r\n\n\n//# sourceURL=webpack:///./src/utils/react/generateRandomIndex.ts?");
 
 /***/ }),
 
