@@ -1,0 +1,21 @@
+.modal {
+  max-width: 960px;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0px 0px 5px #808080cf;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 0 20px 0;
+}
+
+p {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=post.css.map */

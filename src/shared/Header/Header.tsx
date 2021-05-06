@@ -6,9 +6,10 @@ import { ThreadTitle } from './ThreadTitle/';
 import { SortBlock } from './SortBlock/';
 
 export function Header() {
+
   return (
     <header className={styles.header}>
-      <SearchBlock />
+      <SearchBlock  />
       <ThreadTitle />
       <SortBlock />
     </header>
