@@ -5,7 +5,8 @@ import { Break } from '../../../Break';
 import { Text, EColor } from '../../../Text';
 
 
-interface IUserBlockProps {
+
+  interface IUserBlockProps {
   avatarSrc?: string;
   username?: string;
 }

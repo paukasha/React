@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './main.global.scss';
 import { hot } from 'react-hot-loader/root';
 import { Layout } from './Layout'
@@ -16,7 +16,12 @@ import { Break } from './Break';
 import { useToken } from '../hooks/useToken';
 import { tokenContext } from './context/tokenContext';
 import { userContext, UserContextProvider } from './context/userContext';
-import {commentContext} from './context/commentContext';
+
+
+import { createStore } from 'redux';
+import {Provider} from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { rootReducer } from '../store';
 
 const LIST = [
   { As: 'li' as const, text: 'some'},
@@ -38,6 +43,9 @@ const LIST = [
 //   );
 // }
 //
+
+const store = createStore(rootReducer, composeWithDevTools());
+
 function AppComponent() {
 
   // const [isVisible, setIsVisible] = React.useState(false);
@@ -50,18 +58,13 @@ function AppComponent() {
   // const handleAdd = () => {
   //   setList(list.concat(generateId({ text: generateRandomString(), As: 'li' as const})));
   // }
-  const [commentValue, setCommentValue] = useState('');
+
 
   const [token] = useToken();
-  const CommentProvider = commentContext.Provider;
+
 
   return (
-    <CommentProvider value={
-      {
-        value: commentValue,
-        onChange: setCommentValue,
-      }
-    }>
+    <Provider store={store}>
     <tokenContext.Provider value={token}>
       <UserContextProvider >
         <Layout>
@@ -104,7 +107,8 @@ function AppComponent() {
       </UserContextProvider>
 
     </tokenContext.Provider>
-    </CommentProvider>
+
+    </Provider>
   );
 }
 

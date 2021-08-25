@@ -1,23 +1,33 @@
 import React, { ChangeEvent, FormEvent, useContext, useRef, useState } from 'react';
 import styles from './commentform.scss';
-import { commentContext } from '../context/commentContext';
 
+type Props = {
+  value: string;
+  onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+  onSubmit: (event: FormEvent) => void;
 
-export function CommentForm() {
-  const { value, onChange } = useContext(commentContext);
+}
+export function CommentForm({value, onChange, onSubmit}: Props) {
+  // const store = useStore<RootState>();
+  // const value = store.getState().commentText;
 
-  function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
-    onChange(event.target.value);
-  }
+  // const value = useSelector<RootState, string>(state => state.commentText);
+  // const dispatch = useDispatch();
 
-  function handleSubmit(event: FormEvent) {
-    event.preventDefault();
-  console.log(value);
-  }
+  // const { onChange } = useContext(commentContext);
+
+  // function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
+  //   dispatch(updateComment(event.target.value))
+  // }
+  //
+  // function handleSubmit(event: FormEvent) {
+  //   event.preventDefault();
+  // console.log(value);
+  // }
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
-      <textarea className={styles.input} value={value} onChange={handleChange}/>
+    <form className={styles.form} onSubmit={onSubmit}>
+      <textarea className={styles.input} value={value} onChange={onChange}/>
       <button type="submit" className={styles.button}>Комментировать</button>
     </form>
   );
