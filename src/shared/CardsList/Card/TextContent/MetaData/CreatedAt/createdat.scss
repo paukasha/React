@@ -1,0 +1,17 @@
+.createdAt {
+
+  font-size: 10px;
+  color: var(--grey99);
+}
+
+.publishedLabel {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .publishedLabel {
+    display: inline;
+    font-size: 10px;
+    color: var(--grey99);
+  }
+}

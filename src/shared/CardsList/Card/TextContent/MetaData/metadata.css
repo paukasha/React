@@ -1,0 +1,13 @@
+.metadata {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+@media all and (min-width: 1024px) {
+  .metadata {
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=metadata.css.map */

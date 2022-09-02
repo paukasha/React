@@ -1,0 +1,9 @@
+// добавляет в объект какие-то значения
+//  принимает два аргумента ключ и значение
+export function assoc<K extends string, T>(key: K, value: T) {
+  return <O extends object>(obj: O) => ({
+    ...obj,
+    [key]: value,
+  //   расширяет ли ключ к ключи o
+  }) as K extends keyof O ? (Omit<O, K> & Record<K, T>) : (O & Record<K, T>)
+}
