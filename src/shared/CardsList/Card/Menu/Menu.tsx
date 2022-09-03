@@ -12,7 +12,6 @@ export function Menu() {
         button={
           <button className={styles.menuButton}>
             <MenuIcon />
-
           </button>
         }
       >
