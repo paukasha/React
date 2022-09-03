@@ -2,20 +2,53 @@ import React from 'react';
 import styles from './genericlist.scss';
 
 interface IItem {
-  // value: string;
-  text: string;
-  id: string;
-  onClick?: (id: string) => void;
-  className?: string;
-  As?: 'a' | 'li' | 'button' |'div';
-  href?: string;
-  // onClick: () => void;
+  text: string,
+  id: string,
+  onClick: (id:string) => void,
+  className?: string,
+  As?: 'a' | 'li' | 'button' | 'div',
+  href?: string
 }
+
+
+interface IGenericListProps {
+  list: IItem[]
+}
+// функция которая ничего не делает например если в клик ничего не передают чтоб не делать проверку
 const noop = () => {};
-interface IMyListProps {
-  list: IItem[];
-  // onClick: (id: string) => void;
+// IGenericListProps - список который может рендерить абсолютно любые списки
+export function GenericList({list}: IGenericListProps) {
+  return (
+    <>
+    {/* напишем свой generic список - абстрактный список*/}
+      {list.map(({As='div', text, onClick, className, id, href}) => (
+        <As
+          className={className}
+          onClick={() => onClick(id)}
+          key={id}
+          href={href}
+        >
+          {text}
+        </As>
+      ))}
+    </>
+  )
 }
+// interface IItem {
+//   // value: string;
+//   text: string;
+//   id: string;
+//   onClick?: (id: string) => void;
+//   className?: string;
+//   As?: 'a' | 'li' | 'button' |'div';
+//   href?: string;
+//   // onClick: () => void;
+// }
+
+// interface IMyListProps {
+//   list: IItem[];
+//   // onClick: (id: string) => void;
+// }
 // export function MyList({list }: IMyListProps) {
 //   return (
 //     <ul>
@@ -35,23 +68,23 @@ interface IMyListProps {
         //   <li key={2}>Content One 2</li>,
         //   <li key={4}>Content One 4</li>,
         // ]
-
-interface  IGenericListProps {
-  list: IItem[];
-}
-export function GenericList({ list }: IGenericListProps) {
-  return (
-    <>
-      {list.map(({As = 'div',text, onClick=noop, className, id,  href}) => (
-        <As
-          className={className}
-          onClick={() => {onClick(id)}}
-          key={id}
-          href={href}
-        >
-          {text}
-        </As>
-      ))}
-    </>
-  );
-}
+//
+// interface  IGenericListProps {
+//   list: IItem[];
+// }
+// export function GenericList({ list }: IGenericListProps) {
+//   return (
+//     <>
+//       {list.map(({As = 'div',text, onClick=noop, className, id,  href}) => (
+//         <As
+//           className={className}
+//           onClick={() => {onClick(id)}}
+//           key={id}
+//           href={href}
+//         >
+//           {text}
+//         </As>
+//       ))}
+//     </>
+//   );
+// }

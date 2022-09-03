@@ -5,6 +5,7 @@ import { indexTemplate} from "./indexTemplate";
 import axios from 'axios';
 
 const app = express();
+// по урлу static будут доступны все файлы которые будут лежать в dist/client
 app.use('/static', express.static('./dist/client'));
 
 app.get('/', (req, res) => {

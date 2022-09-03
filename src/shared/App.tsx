@@ -1,4 +1,3 @@
-// @ts-ignore
 import React from 'react';
 import './main.global.scss';
 import {hot} from 'react-hot-loader/root';
@@ -6,40 +5,54 @@ import {Layout} from './Layout'
 import {Header} from './Header';
 import {Content} from './Content';
 import {CardsList} from './CardsList';
-import {generateId} from '../utils/react/generateRandomIndex';
+import {generateId, generateRandomString} from '../utils/react/generateRandomIndex';
 import {Dropdown} from './Dropdown';
 import {Text} from './Text';
 import {Break} from './Break';
 import {useToken} from '../hooks/useToken';
 import {tokenContext} from './context/tokenContext';
 import {UserContextProvider} from './context/userContext';
+import {GenericList} from './GenericList'
 
 
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {rootReducer} from '../store';
+import {merge} from "../utils/js/merge";
+
 
 const LIST = [
   {As: 'li' as const, text: 'some'},
   {As: 'li' as const, text: 'other some'},
   {As: 'li' as const, text: 'some'}
 ].map(generateId)
-// было в map (item) => ({ ...item, id: generateRandomString() })
+
 const store = createStore(rootReducer, composeWithDevTools());
-// import { MyHooks } from './HooksExample';
-// import { getValue } from './utils/react/pickFromSyntheticEvent';
+
 function AppComponent() {
+  const [list, setList] = React.useState(LIST)
+  const handleItemClick = (id: string) => {
+   setList(list.filter((item) => item.id !=id))
+  }
+
+  const handleAdd = () => {
+    setList(list.concat(generateId({text: generateRandomString(), As: 'li' as const})))
+  }
+
   return (
     <Layout>
       <Header />
       <Content>
-        <CardsList/>
-        <MyList list={LIST} onClick={console.log} />
+        <CardsList />
+        <br/>
       </Content>
+
+
     </Layout>
   );
 }
+
 
 
 

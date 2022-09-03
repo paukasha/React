@@ -7,7 +7,7 @@ import { Controls } from './Controls';
 
 export function Card() {
   return (
-    <li className={styles.card}>
+    <li className={styles.card} >
       <TextContent />
       <Preview/>
       <Menu />

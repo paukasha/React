@@ -5,6 +5,9 @@ const GLOBAL_CSS_REGEXP = /\.global\.scss$/;
 const { DefinePlugin } = require('webpack');
 
 module.exports = {
+  // этот билд будет приготовлен только для node.js
+  // бандл вебпака для node отличается от бандла от браузера
+  // отличается тем что не взаймодействует внутри себя с window и документом и делает много разных вещей чтобы работать внутри node.sj
   target: 'node',
   mode: NODE_ENV ? NODE_ENV : 'development',
   entry: path.resolve(__dirname, '../src/server/server.js'),
@@ -13,7 +16,8 @@ module.exports = {
     filename: 'server.js'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json',]
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json',],
+
   },
   externals: [nodeExternals()],
   module: {
@@ -29,7 +33,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: {
-                mode: 'local', 
+                mode: 'local',
                 localIdentName: '[name]__[local]--[hash:base64:5]',
               },
               onlyLocals: true,
@@ -55,7 +59,6 @@ module.exports = {
           },
         ],
       },
-
     ]
   },
   optimization: {

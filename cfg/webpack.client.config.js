@@ -8,20 +8,12 @@ const GLOBAL_CSS_REGEXP = /\.global\.scss$/;
 const DEV_PLUGINS = [ new CleanWebpackPlugin(), new HotModuleReplacementPlugin() ];
 const COMMON_PLUGINS = [ new DefinePlugin({'process.env.CLIENT_ID': `'${process.env.CLIENT_ID}'`})];
 
-function setupDevtool() {
-  if (IS_PROD) {
-    return false;
-  }
-  if (IS_DEV) {
-    return 'eval';
-  }
-}
-
 module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json',],
     alias: {
       'react-dom': IS_DEV ? '@hot-loader/react-dom' : 'react-dom',
+
     }
   },
   mode: NODE_ENV ? NODE_ENV : 'development',
@@ -48,7 +40,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
              modules: {
-               mode: 'local', 
+               mode: 'local',
                localIdentName: '[name]__[local]--[hash:base64:5]',
              }
             }
@@ -75,6 +67,7 @@ module.exports = {
       },
     ]
   },
-  devtool: setupDevtool(),
+  devtool: IS_DEV ? 'eval' : false,
   plugins: IS_DEV ? DEV_PLUGINS.concat(COMMON_PLUGINS) : COMMON_PLUGINS,
 };
+console.log('lll', path.join(__dirname,  '../src/'))
