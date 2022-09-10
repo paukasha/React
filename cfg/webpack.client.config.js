@@ -62,7 +62,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
             loader: "file-loader",
@@ -71,30 +71,6 @@ module.exports = {
               publicPath: '/static/'
             }
           },
-          // {
-          //   loader: 'image-webpack-loader',
-          //   // options: {
-          //   //   mozjpeg: {
-          //   //     enabled: false,
-          //   //     progressive: true,
-          //   //     quality: 65
-          //   //   },
-          //   //   optipng: {
-          //   //     enabled: false
-          //   //   },
-          //   //   pngquant: {
-          //   //     quality: '65-90',
-          //   //     speed: 4
-          //   //   },
-          //   //   gifsicle: {
-          //   //     interlaced: false
-          //   //   },
-          //   //   webp: {
-          //   //     enabled: false,
-          //   //     quality: 75
-          //   //   }
-          //   // }
-          // }
         ],
       },
     ],

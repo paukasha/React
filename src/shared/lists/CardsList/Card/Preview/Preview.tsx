@@ -9,6 +9,5 @@ export function Preview() {
            alt="preview"
            className={styles.previewImg} />
     </div >
-
   );
 }

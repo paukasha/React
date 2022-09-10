@@ -1,4 +1,6 @@
 .menuItemsList {
+  max-width: 100%;
+  width: 157px;
   padding: 0 20px;
 }
 
@@ -9,12 +11,12 @@
   align-items: center;
 }
 
-.menuItem > svg + span {
+.menuItem > span {
   margin-left: 7px;
 }
 
-.divider {
-   height: 1px;
-   width: 100%;
-  background-color: var(--greyEC);
- }
+.menuItem:not(:last-child) {
+  content: '';
+  width: 100%;
+  border-bottom: 1px solid var(--greyEC);
+}

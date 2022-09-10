@@ -11,6 +11,10 @@ import {generateId, generateRandomString} from './utils/react/generateRandomInde
 import {createStore} from 'redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {rootReducer} from './store';
+import {Icon} from "./shared/base-components/Icon";
+import {EIcons} from "./shared/components/Icons/AllIcons";
+import {BlockIcon} from "./shared/components/Icons";
+
 
 
 const LIST = [

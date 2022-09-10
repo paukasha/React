@@ -20,7 +20,7 @@ type TSizes = 28 | 20 | 16 | 14 | 12 | 10;
 interface ITextProps {
   As?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div';
   children?: React.ReactNode;
-  size: TSizes;
+  size?: TSizes;
   mobileSize?: TSizes;
   tabletSize?: TSizes;
   desktopSize?: TSizes;
@@ -33,7 +33,8 @@ export function Text(props: ITextProps) {
     As = 'span',
     color = EColor.black,
     bold = false,
-    children, size,
+    children,
+    size,
     mobileSize,
     tabletSize,
     desktopSize

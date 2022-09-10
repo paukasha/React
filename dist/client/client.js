@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "033c98ecb9f36a15431b";
+/******/ 	var hotCurrentHash = "13c99a224743d6944740";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1382,7 +1382,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;\n/*!\n  C
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"\\n:root {\\n  --whiteLightness: 100%;\\n  --black: #333333;\\n  --white: hsl(0, 0%, var(--whiteLightness));\\n  --orange: #cc6633;\\n  --green: #A4cc33;\\n  --greyF3: hsl(0, 0%, calc(var(--whiteLightness) - 4%));\\n  --greyEC: hsl(0, 0%, calc(var(--whiteLightness) - 7%));\\n  --greyF4: hsl(0, 0%, calc(var(--whiteLightness) - 15%));\\n  --greyD9: hsl(0, 0%, calc(var(--whiteLightness) - 23%));\\n  --greyC4: hsl(0, 0%, calc(var(--whiteLightness) - 40%));\\n  --grey99: hsl(0, 0%, calc(var(--whiteLightness) - 60%));\\n}\\n\\nhtml {\\n  box-sizing: border-box;\\n}\\n\\nbody {\\n  padding: 0;\\n  margin: 0;\\n  background-color: var(--greyF4);\\n  font-size: 16px;\\n  line-height: 16px;\\n  font-family: 'Roboto', serif;\\n  font-style: normal;\\n  font-weight: normal;\\n}\\n\\n* {\\n  color: var(--black);\\n  box-sizing: border-box;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale;\\n  margin: 0;\\n  padding: 0;\\n}\\nimg {\\n  max-width: 100%;\\n}\\n\\na {\\n  text-decoration: none;\\n  color: inherit;\\n}\\n\\nul {\\n  margin: 0;\\n  padding: 0;\\n  list-style: none;\\n}\\n\\nbutton {\\n  background: transparent;\\n  outline: none;\\n  border: 0;\\n  cursor: pointer;\\n}\\n\\n\\n.container {\\n  margin: 0 auto;\\n  padding: 0 20px;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/main.global.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"\\n:root {\\n  --whiteLightness: 100%;\\n  --black: #333333;\\n  --white: hsl(0, 0%, var(--whiteLightness));\\n  --orange: #cc6633;\\n  --green: #A4cc33;\\n  --greyF3: hsl(0, 0%, calc(var(--whiteLightness) - 4%));\\n  --greyEC: hsl(0, 0%, calc(var(--whiteLightness) - 7%));\\n  --greyF4: hsl(0, 0%, calc(var(--whiteLightness) - 15%));\\n  --greyD9: hsl(0, 0%, calc(var(--whiteLightness) - 23%));\\n  --greyC4: hsl(0, 0%, calc(var(--whiteLightness) - 40%));\\n  --grey99: hsl(0, 0%, calc(var(--whiteLightness) - 60%));\\n}\\n\\nhtml {\\n  box-sizing: border-box;\\n}\\n\\nbody {\\n  padding: 0;\\n  margin: 0;\\n  background-color: var(--greyF4);\\n  font-size: 16px;\\n  line-height: 16px;\\n  font-family: 'Roboto', serif;\\n  font-style: normal;\\n  font-weight: normal;\\n}\\n\\n* {\\n  color: var(--black);\\n  box-sizing: border-box;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale;\\n  margin: 0;\\n  padding: 0;\\n}\\nimg {\\n  max-width: 100%;\\n}\\n\\nsvg {\\n  width: 100%;\\n  /*height: 100%;*/\\n}\\n\\na {\\n  text-decoration: none;\\n  color: inherit;\\n}\\n\\nul {\\n  margin: 0;\\n  padding: 0;\\n  list-style: none;\\n}\\n\\nbutton {\\n  background: transparent;\\n  outline: none;\\n  border: 0;\\n  cursor: pointer;\\n}\\n\\n\\n.container {\\n  margin: 0 auto;\\n  padding: 0 20px;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/main.global.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -1602,7 +1602,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".menuitemslist__menuItemsList--Sy2UR {\\n  padding: 0 20px;\\n}\\n\\n.menuitemslist__menuItem--2ygun {\\n  padding: 12px 0;\\n  display: flex;\\n  flex-flow: row nowrap;\\n  align-items: center;\\n}\\n\\n.menuitemslist__menuItem--2ygun > svg + span {\\n  margin-left: 7px;\\n}\\n\\n.menuitemslist__divider--3s5tR {\\n   height: 1px;\\n   width: 100%;\\n  background-color: var(--greyEC);\\n }\", \"\"]);\n// Exports\nexports.locals = {\n\t\"menuItemsList\": \"menuitemslist__menuItemsList--Sy2UR\",\n\t\"menuItem\": \"menuitemslist__menuItem--2ygun\",\n\t\"divider\": \"menuitemslist__divider--3s5tR\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/lists/CardsList/Card/MenuItemsList/menuitemslist.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".menuitemslist__menuItemsList--Sy2UR {\\n  max-width: 100%;\\n  width: 157px;\\n  padding: 0 20px;\\n}\\n\\n.menuitemslist__menuItem--2ygun {\\n  padding: 12px 0;\\n  display: flex;\\n  flex-flow: row nowrap;\\n  align-items: center;\\n}\\n\\n.menuitemslist__menuItem--2ygun > span {\\n  margin-left: 7px;\\n}\\n\\n.menuitemslist__menuItem--2ygun:not(:last-child) {\\n  content: '';\\n  width: 100%;\\n  border-bottom: 1px solid var(--greyEC);\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"menuItemsList\": \"menuitemslist__menuItemsList--Sy2UR\",\n\t\"menuItem\": \"menuitemslist__menuItem--2ygun\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/lists/CardsList/Card/MenuItemsList/menuitemslist.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
 
 /***/ }),
 
@@ -2710,6 +2710,30 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
+/***/ "./src/shared/base-components/Icon/Icon.tsx":
+/*!**************************************************!*\
+  !*** ./src/shared/base-components/Icon/Icon.tsx ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Icon = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction Icon(props) {\n    var Name = props.name, size = props.size + 'px';\n    return (react_1.default.createElement(\"div\", { style: { width: size } },\n        react_1.default.createElement(Name, null)));\n}\nexports.Icon = Icon;\n\n\n//# sourceURL=webpack:///./src/shared/base-components/Icon/Icon.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/base-components/Icon/index.ts":
+/*!**************************************************!*\
+  !*** ./src/shared/base-components/Icon/index.ts ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    var desc = Object.getOwnPropertyDescriptor(m, k);\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\n      desc = { enumerable: true, get: function() { return m[k]; } };\n    }\n    Object.defineProperty(o, k2, desc);\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./Icon */ \"./src/shared/base-components/Icon/Icon.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/base-components/Icon/index.ts?");
+
+/***/ }),
+
 /***/ "./src/shared/base-components/Layout/Layout.tsx":
 /*!******************************************************!*\
   !*** ./src/shared/base-components/Layout/Layout.tsx ***!
@@ -3224,6 +3248,18 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
+/***/ "./src/shared/components/Icons/AllIcons.tsx":
+/*!**************************************************!*\
+  !*** ./src/shared/components/Icons/AllIcons.tsx ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.EIcons = void 0;\nvar BlockIcon_1 = __webpack_require__(/*! ./BlockIcon */ \"./src/shared/components/Icons/BlockIcon.tsx\");\nvar WarningIcon_1 = __webpack_require__(/*! ./WarningIcon */ \"./src/shared/components/Icons/WarningIcon.tsx\");\nvar Comment_1 = __webpack_require__(/*! ./Comment */ \"./src/shared/components/Icons/Comment.tsx\");\nvar Share_1 = __webpack_require__(/*! ./Share */ \"./src/shared/components/Icons/Share.tsx\");\nvar Save_1 = __webpack_require__(/*! ./Save */ \"./src/shared/components/Icons/Save.tsx\");\nexports.EIcons = {\n    block: BlockIcon_1.BlockIcon,\n    warning: WarningIcon_1.WarningIcon,\n    comment: Comment_1.Comment,\n    share: Share_1.Share,\n    save: Save_1.Save\n};\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/AllIcons.tsx?");
+
+/***/ }),
+
 /***/ "./src/shared/components/Icons/BlockIcon.tsx":
 /*!***************************************************!*\
   !*** ./src/shared/components/Icons/BlockIcon.tsx ***!
@@ -3232,7 +3268,19 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    var desc = Object.getOwnPropertyDescriptor(m, k);\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\n      desc = { enumerable: true, get: function() { return m[k]; } };\n    }\n    Object.defineProperty(o, k2, desc);\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.BlockIcon = void 0;\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction BlockIcon() {\n    return (React.createElement(\"svg\", { width: \"12\", height: \"12\", viewBox: \"0 0 12 12\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        React.createElement(\"path\", { d: \"M6 0C2.688 0 0 2.688 0 6C0 9.312 2.688 12 6 12C9.312 12 12 9.312 12 6C12 2.688 9.312 0 6 0ZM6 10.8C3.348 10.8 1.2 8.652 1.2 6C1.2 4.89 1.578 3.87 2.214 3.06L8.94 9.786C8.13 10.422 7.11 10.8 6 10.8ZM9.786 8.94L3.06 2.214C3.87 1.578 4.89 1.2 6 1.2C8.652 1.2 10.8 3.348 10.8 6C10.8 7.11 10.422 8.13 9.786 8.94Z\", fill: \"#999999\" })));\n}\nexports.BlockIcon = BlockIcon;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/BlockIcon.tsx?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    var desc = Object.getOwnPropertyDescriptor(m, k);\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\n      desc = { enumerable: true, get: function() { return m[k]; } };\n    }\n    Object.defineProperty(o, k2, desc);\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.BlockIcon = void 0;\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar BlockIcon = function () {\n    return (React.createElement(\"svg\", { height: \"18\", viewBox: \"0 0 12 12\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        React.createElement(\"path\", { d: \"M6 0C2.688 0 0 2.688 0 6C0 9.312 2.688 12 6 12C9.312 12 12 9.312 12 6C12 2.688 9.312 0 6 0ZM6 10.8C3.348 10.8 1.2 8.652 1.2 6C1.2 4.89 1.578 3.87 2.214 3.06L8.94 9.786C8.13 10.422 7.11 10.8 6 10.8ZM9.786 8.94L3.06 2.214C3.87 1.578 4.89 1.2 6 1.2C8.652 1.2 10.8 3.348 10.8 6C10.8 7.11 10.422 8.13 9.786 8.94Z\", fill: \"#999999\" })));\n};\nexports.BlockIcon = BlockIcon;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/BlockIcon.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/components/Icons/Comment.tsx":
+/*!*************************************************!*\
+  !*** ./src/shared/components/Icons/Comment.tsx ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Comment = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction Comment() {\n    return (react_1.default.createElement(\"svg\", { height: \"15\", viewBox: \"0 0 15 15\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        react_1.default.createElement(\"path\", { d: \"M12.75 0.416626H1.41667C0.6375 0.416626 0 1.05413 0 1.83329V10.3333C0 11.1125 0.6375 11.75 1.41667 11.75H11.3333L14.1667 14.5833V1.83329C14.1667 1.05413 13.5292 0.416626 12.75 0.416626ZM11.3333 8.91663H2.83333V7.49996H11.3333V8.91663ZM11.3333 6.79163H2.83333V5.37496H11.3333V6.79163ZM11.3333 4.66663H2.83333V3.24996H11.3333V4.66663Z\", fill: \"#999999\" })));\n}\nexports.Comment = Comment;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/Comment.tsx?");
 
 /***/ }),
 
@@ -3260,6 +3308,30 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
+/***/ "./src/shared/components/Icons/Save.tsx":
+/*!**********************************************!*\
+  !*** ./src/shared/components/Icons/Save.tsx ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Save = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction Save() {\n    return (react_1.default.createElement(\"svg\", { height: \"14\", viewBox: \"0 0 14 14\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        react_1.default.createElement(\"path\", { d: \"M1.4 2.8H0V12.6C0 13.37 0.63 14 1.4 14H11.2V12.6H1.4V2.8ZM12.6 0H4.2C3.43 0 2.8 0.63 2.8 1.4V9.8C2.8 10.57 3.43 11.2 4.2 11.2H12.6C13.37 11.2 14 10.57 14 9.8V1.4C14 0.63 13.37 0 12.6 0ZM11.9 6.3H9.1V9.1H7.7V6.3H4.9V4.9H7.7V2.1H9.1V4.9H11.9V6.3Z\", fill: \"#979797\" })));\n}\nexports.Save = Save;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/Save.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/components/Icons/Share.tsx":
+/*!***********************************************!*\
+  !*** ./src/shared/components/Icons/Share.tsx ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Share = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction Share() {\n    return (react_1.default.createElement(\"svg\", { height: \"14\", viewBox: \"0 0 12 14\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        react_1.default.createElement(\"path\", { d: \"M10 9.89558C9.49333 9.89558 9.04 10.1064 8.69333 10.4367L3.94 7.52008C3.97333 7.35843 4 7.19679 4 7.02811C4 6.85944 3.97333 6.69779 3.94 6.53614L8.64 3.64759C9 3.999 9.47333 4.21687 10 4.21687C11.1067 4.21687 12 3.2751 12 2.10843C12 0.941767 11.1067 0 10 0C8.89333 0 8 0.941767 8 2.10843C8 2.27711 8.02667 2.43875 8.06 2.6004L3.36 5.48896C3 5.13755 2.52667 4.91968 2 4.91968C0.893333 4.91968 0 5.86145 0 7.02811C0 8.19478 0.893333 9.13655 2 9.13655C2.52667 9.13655 3 8.91867 3.36 8.56727L8.10667 11.491C8.07333 11.6386 8.05333 11.7932 8.05333 11.9478C8.05333 13.0793 8.92667 14 10 14C11.0733 14 11.9467 13.0793 11.9467 11.9478C11.9467 10.8163 11.0733 9.89558 10 9.89558Z\", fill: \"#999999\" })));\n}\nexports.Share = Share;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/Share.tsx?");
+
+/***/ }),
+
 /***/ "./src/shared/components/Icons/WarningIcon.tsx":
 /*!*****************************************************!*\
   !*** ./src/shared/components/Icons/WarningIcon.tsx ***!
@@ -3268,7 +3340,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    var desc = Object.getOwnPropertyDescriptor(m, k);\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\n      desc = { enumerable: true, get: function() { return m[k]; } };\n    }\n    Object.defineProperty(o, k2, desc);\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.WarningIcon = void 0;\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction WarningIcon() {\n    return (React.createElement(\"svg\", { width: \"14\", height: \"12\", viewBox: \"0 0 14 12\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        React.createElement(\"path\", { d: \"M0 12H14L7 0L0 12ZM7.63636 10.1053H6.36364V8.8421H7.63636V10.1053ZM7.63636 7.57895H6.36364V5.05263H7.63636V7.57895Z\", fill: \"#999999\" })));\n}\nexports.WarningIcon = WarningIcon;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/WarningIcon.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.WarningIcon = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nfunction WarningIcon() {\n    return (react_1.default.createElement(\"svg\", { width: \"16\", height: \"14\", viewBox: \"0 0 16 14\", fill: \"none\", xmlns: \"http://www.w3.org/2000/svg\" },\n        react_1.default.createElement(\"path\", { d: \"M0 14H16L8 0L0 14ZM8.72727 11.7895H7.27273V10.3158H8.72727V11.7895ZM8.72727 8.84211H7.27273V5.89474H8.72727V8.84211Z\", fill: \"#999999\" })));\n}\nexports.WarningIcon = WarningIcon;\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/WarningIcon.tsx?");
 
 /***/ }),
 
@@ -3280,7 +3352,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    var desc = Object.getOwnPropertyDescriptor(m, k);\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\n      desc = { enumerable: true, get: function() { return m[k]; } };\n    }\n    Object.defineProperty(o, k2, desc);\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./MenuIcon */ \"./src/shared/components/Icons/MenuIcon.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./BlockIcon */ \"./src/shared/components/Icons/BlockIcon.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./WarningIcon */ \"./src/shared/components/Icons/WarningIcon.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./IconAnon */ \"./src/shared/components/Icons/IconAnon.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/index.ts?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    var desc = Object.getOwnPropertyDescriptor(m, k);\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\n      desc = { enumerable: true, get: function() { return m[k]; } };\n    }\n    Object.defineProperty(o, k2, desc);\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./MenuIcon */ \"./src/shared/components/Icons/MenuIcon.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./BlockIcon */ \"./src/shared/components/Icons/BlockIcon.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./WarningIcon */ \"./src/shared/components/Icons/WarningIcon.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./Comment */ \"./src/shared/components/Icons/Comment.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./Share */ \"./src/shared/components/Icons/Share.tsx\"), exports);\n__exportStar(__webpack_require__(/*! ./IconAnon */ \"./src/shared/components/Icons/IconAnon.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/components/Icons/index.ts?");
 
 /***/ }),
 
@@ -3386,7 +3458,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Menu = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar menu_css_1 = __importDefault(__webpack_require__(/*! ./menu.css */ \"./src/shared/lists/CardsList/Card/Menu/menu.css\"));\nvar Icons_1 = __webpack_require__(/*! ../../../../components/Icons */ \"./src/shared/components/Icons/index.ts\");\nvar Dropdown_1 = __webpack_require__(/*! ../../../../components/Dropdown */ \"./src/shared/components/Dropdown/index.ts\");\nvar MenuItemsList_1 = __webpack_require__(/*! ../MenuItemsList */ \"./src/shared/lists/CardsList/Card/MenuItemsList/index.ts\");\nfunction Menu() {\n    return (react_1.default.createElement(\"div\", { className: menu_css_1.default.menu },\n        react_1.default.createElement(Dropdown_1.Dropdown, { button: react_1.default.createElement(\"button\", { className: menu_css_1.default.menuButton },\n                react_1.default.createElement(Icons_1.MenuIcon, null)) },\n            react_1.default.createElement(\"div\", { className: menu_css_1.default.dropdown },\n                react_1.default.createElement(MenuItemsList_1.MenuItemsList, { postId: \"1234\" }),\n                react_1.default.createElement(\"button\", { className: menu_css_1.default.closeButton })))));\n}\nexports.Menu = Menu;\n\n\n//# sourceURL=webpack:///./src/shared/lists/CardsList/Card/Menu/Menu.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Menu = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar menu_css_1 = __importDefault(__webpack_require__(/*! ./menu.css */ \"./src/shared/lists/CardsList/Card/Menu/menu.css\"));\nvar Icons_1 = __webpack_require__(/*! ../../../../components/Icons */ \"./src/shared/components/Icons/index.ts\");\nvar Dropdown_1 = __webpack_require__(/*! ../../../../components/Dropdown */ \"./src/shared/components/Dropdown/index.ts\");\nvar MenuItemsList_1 = __webpack_require__(/*! ../MenuItemsList */ \"./src/shared/lists/CardsList/Card/MenuItemsList/index.ts\");\nvar Text_1 = __webpack_require__(/*! ../../../../base-components/Text */ \"./src/shared/base-components/Text/index.ts\");\nfunction Menu() {\n    return (react_1.default.createElement(\"div\", { className: menu_css_1.default.menu },\n        react_1.default.createElement(Dropdown_1.Dropdown, { button: react_1.default.createElement(\"button\", { className: menu_css_1.default.menuButton },\n                react_1.default.createElement(Icons_1.MenuIcon, null)) },\n            react_1.default.createElement(\"div\", { className: menu_css_1.default.dropdown },\n                react_1.default.createElement(MenuItemsList_1.MenuItemsList, { postId: \"1234\" }),\n                react_1.default.createElement(\"button\", { className: menu_css_1.default.closeButton },\n                    react_1.default.createElement(Text_1.Text, { mobileSize: 12, size: 14, color: Text_1.EColor.grey66 }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\"))))));\n}\nexports.Menu = Menu;\n\n\n//# sourceURL=webpack:///./src/shared/lists/CardsList/Card/Menu/Menu.tsx?");
 
 /***/ }),
 
@@ -3421,7 +3493,7 @@ eval("var api = __webpack_require__(/*! ../../../../../../node_modules/style-loa
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.MenuItemsList = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar menuitemslist_css_1 = __importDefault(__webpack_require__(/*! ./menuitemslist.css */ \"./src/shared/lists/CardsList/Card/MenuItemsList/menuitemslist.css\"));\nvar Icons_1 = __webpack_require__(/*! ../../../../components/Icons */ \"./src/shared/components/Icons/index.ts\");\nfunction MenuItemsList(_a) {\n    var postId = _a.postId;\n    return (react_1.default.createElement(\"ul\", { className: menuitemslist_css_1.default.menuItemsList },\n        react_1.default.createElement(\"li\", { className: menuitemslist_css_1.default.menuItem, onClick: function () { return console.log(postId); } },\n            react_1.default.createElement(Icons_1.BlockIcon, null)),\n        react_1.default.createElement(\"div\", { className: menuitemslist_css_1.default.divider }),\n        react_1.default.createElement(\"li\", { className: menuitemslist_css_1.default.menuItem },\n            react_1.default.createElement(Icons_1.WarningIcon, null))));\n}\nexports.MenuItemsList = MenuItemsList;\n\n\n//# sourceURL=webpack:///./src/shared/lists/CardsList/Card/MenuItemsList/MenuItemsList.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.MenuItemsList = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar menuitemslist_css_1 = __importDefault(__webpack_require__(/*! ./menuitemslist.css */ \"./src/shared/lists/CardsList/Card/MenuItemsList/menuitemslist.css\"));\nvar Text_1 = __webpack_require__(/*! ../../../../base-components/Text */ \"./src/shared/base-components/Text/index.ts\");\nvar Icon_1 = __webpack_require__(/*! ../../../../base-components/Icon */ \"./src/shared/base-components/Icon/index.ts\");\nvar AllIcons_1 = __webpack_require__(/*! ../../../../components/Icons/AllIcons */ \"./src/shared/components/Icons/AllIcons.tsx\");\nfunction MenuItemsList(_a) {\n    var postId = _a.postId;\n    var comment = AllIcons_1.EIcons.comment, share = AllIcons_1.EIcons.share, block = AllIcons_1.EIcons.block, save = AllIcons_1.EIcons.save, warning = AllIcons_1.EIcons.warning;\n    var itemListData = [\n        { icon: comment, text: 'Комментарий' },\n        { icon: share, text: 'Поделиться' },\n        { icon: block, text: 'Скрыть' },\n        { icon: save, text: 'Сохранить' },\n        { icon: warning, text: 'Пожаловаться' },\n    ];\n    return (react_1.default.createElement(\"ul\", { className: menuitemslist_css_1.default.menuItemsList }, itemListData.map(function (el) { return react_1.default.createElement(react_1.default.Fragment, null,\n        react_1.default.createElement(\"li\", { className: menuitemslist_css_1.default.menuItem, key: el.text, onClick: function () { return console.log(postId); } },\n            react_1.default.createElement(Icon_1.Icon, { name: el.icon }),\n            react_1.default.createElement(Text_1.Text, { color: Text_1.EColor.grey99 }, el.text))); })));\n}\nexports.MenuItemsList = MenuItemsList;\n\n\n//# sourceURL=webpack:///./src/shared/lists/CardsList/Card/MenuItemsList/MenuItemsList.tsx?");
 
 /***/ }),
 
