@@ -2,3 +2,5 @@ dist
 node_modules
 examples
 .idea
+
+*.css.map
