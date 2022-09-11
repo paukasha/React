@@ -1,6 +1,13 @@
-dist
+.DS_Store
 node_modules
-examples
+/dist
+build
+
+
+# local env files
+.env.local
+.env.*.local
+
 .idea
 
 *.css.map
