@@ -9,27 +9,24 @@ interface IMenuItemsList {
 }
 
 export function MenuItemsList({postId}: IMenuItemsList) {
-  const {comment, share, block, save, warning} = EIcons;
 
   const itemListData = [
-    {icon: comment, text: 'Комментарий'},
-    {icon: share, text: 'Поделиться'},
-    {icon: block, text: 'Скрыть'},
-    {icon: save, text: 'Сохранить'},
-    {icon: warning, text: 'Пожаловаться'},
+    {id: 1, icon: EIcons.comment, text: 'Комментарий'},
+    {id: 2, icon: EIcons.share, text: 'Поделиться'},
+    {id: 3, icon: EIcons.block, text: 'Скрыть'},
+    {id: 4, icon: EIcons.save, text: 'Сохранить'},
+    {id: 5, icon: EIcons.warning, text: 'Пожаловаться'},
   ]
 
   return (
     <ul className={styles.menuItemsList} >
-      {itemListData.map(el => <>
-        <li className={styles.menuItem}
-            key={el.text}
+      {itemListData.map((el,idx) => <li className={styles.menuItem}
+            key={idx}
             onClick={() => console.log(postId)} >
-          <Icon name={el.icon} />
+          <Icon name={el.icon} iconClass='icon18' />
           <Text color={EColor.grey99} >{el.text}</Text >
         </li>
-      </>)
-      }
-    </ul >
+     )}
+    </ul>
   );
 }

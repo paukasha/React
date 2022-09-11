@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/auth', (req, res) => {
+  console.log('code',req.query.code)
   axios.post(
     'https://www.reddit.com/api/v1/access_token',
     `grant_type=authorization_code&code=${req.query.code}&redirect_uri=http://localhost:3000/auth`,
