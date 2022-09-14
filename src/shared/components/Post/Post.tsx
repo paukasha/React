@@ -1,21 +1,21 @@
 import React, {useEffect, useRef} from 'react';
 import ReactDOM from 'react-dom';
 import styles from './post.css';
-import {CommentFormContainer} from '../../forms/CommentFormContainer/CommentFormContainer';
+// import {CommentFormContainer} from '../../forms/CommentFormContainer/CommentFormContainer';
+import {CommentForm} from "../../forms/CommentForm";
 
 interface IPost {
   onClose?: () => void;
 }
 
 export function Post(props: IPost) {
-  const ref = useRef<HTMLDivElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClick(event: MouseEvent) {
-      if (event.target instanceof Node && !ref.current?.contains(event.target)) {
+      if (event.target instanceof Node && !modalRef.current?.contains(event.target)) {
         props.onClose?.();
       }
-
     }
 
     document.addEventListener('click', handleClick);
@@ -27,8 +27,8 @@ export function Post(props: IPost) {
   if (!node) return null;
 
   return ReactDOM.createPortal((
-    <div className={styles.modal}
-         ref={ref} >
+   <div className={styles.modal}
+         ref={modalRef} >
       <h2 >Реализация намеченных плановых заданий Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</h2 >
       <div className={styles.content} >
         <p >Есть над чем задуматься: тщательные исследования конкурентов представляют собой не что иное, как
@@ -47,7 +47,7 @@ export function Post(props: IPost) {
           сторонники тоталитаризма в науке и по сей день остаются уделом либералов, которые жаждут быть превращены в
           посмешище, хотя само их существование приносит несомненную пользу обществу.</p >
       </div >
-      <CommentFormContainer />
+      <CommentForm />
     </div >
   ), node);
 }

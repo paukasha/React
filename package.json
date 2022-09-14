@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:dev": "env NODE_ENV=development webpack --config webpack.config.js --progress",
-    "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "env NODE_ENV=development CLIENT_ID=BNksSH8XZFA7iA  node ./bin/dev.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js --progress",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development CLIENT_ID=BNksSH8XZFA7iA  node ./bin/dev.js",
     "test": "npx jest ---watchAll"
   },
   "author": "",
