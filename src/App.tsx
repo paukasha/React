@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import './shared/main.global.css';
 import {hot} from 'react-hot-loader/root';
 import {Layout} from './shared/base-components/Layout'
@@ -7,7 +7,7 @@ import {Content} from './shared/base-components/Content';
 import {CardsList} from './shared/lists/CardsList';
 
 
-import {createStore} from 'redux';
+import {applyMiddleware, createStore} from 'redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {Provider} from 'react-redux'
 
@@ -16,11 +16,18 @@ import {tokenContext} from "./shared/context/tokenContext";
 import {UserContextProvider} from "./shared/context/userContext";
 import {commentContext} from "./shared/context/commentContext";
 import {rootReducer} from "./store";
+import thunk from 'redux-thunk'
 
-const store = createStore(rootReducer, composeWithDevTools());
+const store = createStore(rootReducer, composeWithDevTools(
+  applyMiddleware(thunk)
+));
+
 
 function AppComponent() {
-  const [commentValue, setCommentValue] = useState('')
+  useEffect(() => {
+
+
+  })
   const [token] = useToken()
 
  const TokenProvider = tokenContext.Provider
