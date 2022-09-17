@@ -1,8 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import ReactDOM from 'react-dom';
 import styles from './post.css';
-// import {CommentFormContainer} from '../../forms/CommentFormContainer/CommentFormContainer';
-import {CommentForm} from "../../forms/CommentForm";
+import {CommentFormContainer} from '../../forms/CommentFormContainer/';
 
 interface IPost {
   onClose?: () => void;
@@ -47,7 +46,7 @@ export function Post(props: IPost) {
           сторонники тоталитаризма в науке и по сей день остаются уделом либералов, которые жаждут быть превращены в
           посмешище, хотя само их существование приносит несомненную пользу обществу.</p >
       </div >
-      <CommentForm />
+      <CommentFormContainer />
     </div >
   ), node);
 }
