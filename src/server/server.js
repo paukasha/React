@@ -14,16 +14,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/auth', (req, res) => {
-  axios.post(
-    'https://www.reddit.com/api/v1/access_token',
+  const token = Buffer.from(`BhpXBnYATa1mluoBGWAOYA:Gl-tqnPYBGoC6FDYJp6Pnm5hxIJBwQ`, 'utf8').toString('base64')
+  axios.post('https://www.reddit.com/api/v1/access_token',
     `grant_type=authorization_code&code=${req.query.code}&redirect_uri=http://localhost:3000/auth`,
     {
-      auth: {
-        username: process.env.CLIENT_ID,
-        password: 'dFDinx05ivnpw-EG6IQoR69GgG0k9w'
-      },
-      headers: { 'Content-type': 'application/x-www-form-urlencoded',
-      }
+      // auth: {
+      //   username: process.env.CLIENT_ID,
+      //   password: 'Gl-tqnPYBGoC6FDYJp6Pnm5hxIJBwQ'
+      // },
+      headers: {'Content-Type': 'application/x-www-form-urlencoded',
+      'Authorization': `Basic ${token}`}
     })
     .then(({ data }) => {
       res.send(

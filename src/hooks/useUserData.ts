@@ -13,13 +13,11 @@ export function useUserData() {
 
   useEffect(() => {
     axios.get('https://oauth.reddit.com/api/v1/me.json', {
-      headers: { Authorization: `bearer ${token}`}
+      headers: {Authorization: `bearer ${token}`}
     })
     .then((res) => {
       const userData = res.data;
-      console.log(res)
       setData({ name: userData.name, iconImg: userData.icon_img})
-
     }).catch(console.log);
   }, [token])
 

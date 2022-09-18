@@ -3,7 +3,7 @@
 // import {RootState, updateComment} from '../../../store';
 // import {CommentForm} from '../CommentForm';
 //
-export function CommentFormContainer() {
+// export function CommentFormContainer() {
 //   const value = useSelector<RootState, string>(state => state.commentText);
 //   const dispatch = useDispatch();
 //
@@ -23,5 +23,5 @@ export function CommentFormContainer() {
 //       onSubmit={handleSubmit}
 //     />
 //   );
-}
+// }
 //

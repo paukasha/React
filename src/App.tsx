@@ -15,12 +15,8 @@ import {useToken} from "./hooks/useToken";
 import {tokenContext} from "./shared/context/tokenContext";
 import {UserContextProvider} from "./shared/context/userContext";
 import {commentContext} from "./shared/context/commentContext";
-
-const LIST = [
-  {As: 'li' as const, text: 'some'},
-  {As: 'li' as const, text: 'other some'},
-  {As: 'li' as const, text: 'some'}
-].map(generateId)
+import {usePostsData} from "./hooks/usePostsData";
+import {PostsContextProvider} from "./shared/context/postsContext";
 
 const store = createStore(rootReducer, composeWithDevTools());
 
@@ -29,6 +25,9 @@ function AppComponent() {
 
   const [commentValue, setCommentValue] = useState('')
   const CommentProvider = commentContext.Provider
+
+
+
 
   return (
     <CommentProvider value={{value: commentValue,
@@ -39,7 +38,9 @@ function AppComponent() {
         <Layout>
           <Header />
           <Content>
-            <CardsList />
+            <PostsContextProvider>
+              <CardsList/>
+            </PostsContextProvider>
             <br/>
           </Content>
         </Layout>

@@ -12,6 +12,6 @@ export function Card() {
       <Preview />
       <Menu />
       <Controls />
-    </li >
+    </li>
   );
 }
