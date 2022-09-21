@@ -12,7 +12,13 @@ export function CardsList() {
   console.log('posts',posts)
   return (
     <ul className={styles.cardslist} >
-      <Card />
+      {
+        posts?.data?.children.map((el:any) => (
+          <div>456</div>
+          // <Card />
+        ))
+      }
+
     </ul >
   );
 }

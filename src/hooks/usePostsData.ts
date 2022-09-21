@@ -3,7 +3,7 @@ import axios from 'axios';
 import { tokenContext } from '../shared/context/tokenContext';
 
 interface IPosts {
-  [key: string]: any
+  [N: string]: any
 }
 
 export function usePostsData() {
@@ -11,14 +11,14 @@ export function usePostsData() {
   const token = useContext(tokenContext)
 
   useEffect(() => {
-    axios.get(' https://oauth.reddit.com/best', {
+    axios.get('https://oauth.reddit.com/best.json', {
       headers: {Authorization: `bearer ${token}`}
     })
-      .then(({data}) => {
-        setPosts(data)
+      .then((res) => {
+        console.log(res.data)
+        setPosts(res.data)
       })
       .catch(console.log);
   }, [token])
-
   return [posts];
 }

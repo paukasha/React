@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './shared/main.global.css';
 import {hot} from 'react-hot-loader/root';
 import {Layout} from './shared/base-components/Layout'
@@ -26,24 +26,21 @@ function AppComponent() {
   const [commentValue, setCommentValue] = useState('')
   const CommentProvider = commentContext.Provider
 
-
-
-
   return (
     <CommentProvider value={{value: commentValue,
                       onChange: setCommentValue
     }}>
     <tokenContext.Provider value={token}>
       <UserContextProvider>
+        <PostsContextProvider>
         <Layout>
           <Header />
           <Content>
-            <PostsContextProvider>
               <CardsList/>
-            </PostsContextProvider>
             <br/>
           </Content>
         </Layout>
+        </PostsContextProvider>
       </UserContextProvider>
 
     </tokenContext.Provider>
