@@ -3,11 +3,15 @@ import styles from './metadata.css';
 import {UserLink} from './UserLink';
 import {CreatedAt} from './CreatedAt';
 
-export function MetaData() {
+interface IAuthorData {
+  author: string
+  created: number
+}
+export function MetaData({author, created}: IAuthorData) {
   return (
     <div className={styles.metadata} >
-      <UserLink />
-      <CreatedAt />
+      <UserLink author={author}/>
+      <CreatedAt created={created}/>
     </div >
 
   );

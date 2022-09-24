@@ -2,16 +2,20 @@ import React, {useState} from 'react';
 import styles from './title.css';
 import {Post} from '../../../../../components/Post';
 
-export function Title() {
+interface ITitle {
+  title: string
+}
+
+export function Title({title}: ITitle) {
   const [isModalOpened, setIsModalOpened] = useState(false);
 
   return (
     <h2 className={styles.title} >
-      <a href="#user-post"
+      <a href='#'
          onClick={() => {
            setIsModalOpened(true)
          }} >
-        Реализация намеченных плановых заданий Lorem ipsum dolor sit amet.
+        {title}
       </a >
 
       {isModalOpened && (

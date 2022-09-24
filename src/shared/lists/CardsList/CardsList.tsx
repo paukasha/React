@@ -4,20 +4,15 @@ import {Card} from './Card';
 import {usePostsData} from "../../../hooks/usePostsData";
 import {postsContext} from "../../context/postsContext";
 
-
-
 export function CardsList() {
-  const {posts} = useContext(postsContext);
+  const [posts] = usePostsData()
 
   console.log('posts',posts)
   return (
     <ul className={styles.cardslist} >
-      {
-        posts?.data?.children.map((el:any) => (
-          <div>456</div>
-          // <Card />
-        ))
-      }
+      {posts.length && posts.map((el:any) => (
+           <Card post={el} key={el.data.id}/>
+        ))}
 
     </ul >
   );
