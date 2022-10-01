@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './preview.css';
-import preview from './preview1.png'
 
+import image1 from './preview1.png'
 
-export function Preview() {
+interface IPreview {
+  [key: string]: any,
+}
+
+export function Preview({preview}: IPreview) {
+
+  let image = preview === 'self' ?  image1 : preview
+
   return (
     <div className={styles.preview} >
-      <img src={preview}
+      <img src={image}
            alt="preview"
            className={styles.previewImg} />
     </div >

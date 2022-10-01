@@ -2,8 +2,8 @@
   position: relative;
   background-color: var(--white);
   border-radius: 7px;
-  //display: flex;
   flex-flow: row nowrap;
+  margin-bottom: 10px;
 }
 
 .card > *, .textContent > * {

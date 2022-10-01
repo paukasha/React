@@ -7,13 +7,11 @@ import {postsContext} from "../../context/postsContext";
 export function CardsList() {
   const [posts] = usePostsData()
 
-  console.log('posts',posts)
   return (
     <ul className={styles.cardslist} >
       {posts.length && posts.map((el:any) => (
            <Card post={el} key={el.data.id}/>
         ))}
-
     </ul >
   );
 }

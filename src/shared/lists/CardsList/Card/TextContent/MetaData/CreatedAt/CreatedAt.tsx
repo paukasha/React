@@ -8,9 +8,9 @@ interface ICreated {
 
 export function CreatedAt({created}: ICreated) {
   moment.locale('ru-Ru')
-
   let normCreatedDate = moment.unix(created).utc().format()
-  let createdAgo = moment.duration(normCreatedDate, "minutes").humanize()
+  let diff = moment(new Date()).diff(normCreatedDate, 'minutes')
+  let createdAgo = moment.duration(diff, "minutes").humanize()
 
   return (
     <span className={styles.createdAt} >

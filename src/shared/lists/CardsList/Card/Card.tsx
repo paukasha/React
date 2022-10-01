@@ -16,9 +16,9 @@ export function Card({post}: IPost) {
                    title={post.data.title}
                     created={post.data.created}
       />
-      <Preview />
+      <Preview preview={post.data.thumbnail}/>
       <Menu />
-      <Controls />
+      <Controls karma={post.data.score}/>
     </li>
   );
 }

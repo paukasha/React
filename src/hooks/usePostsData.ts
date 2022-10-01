@@ -13,7 +13,6 @@ export function usePostsData() {
       headers: {Authorization: `bearer ${token}`}
     })
       .then((res) => {
-        console.log(res.data?.children)
         return setPosts(res.data.data.children)
       })
       .catch(console.log);
