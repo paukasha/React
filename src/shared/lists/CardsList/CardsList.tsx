@@ -6,7 +6,6 @@ import {postsContext} from "../../context/postsContext";
 
 export function CardsList() {
   const [posts] = usePostsData()
-
   return (
     <ul className={styles.cardslist} >
       {posts.length && posts.map((el:any) => (
