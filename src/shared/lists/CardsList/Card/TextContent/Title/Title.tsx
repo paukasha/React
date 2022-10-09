@@ -11,7 +11,7 @@ export function Title({title}: ITitle) {
 
   return (
     <h2 className={styles.title} >
-      <a href='#'
+      <a className={styles.title__link}
          onClick={() => {
            setIsModalOpened(true)
          }} >

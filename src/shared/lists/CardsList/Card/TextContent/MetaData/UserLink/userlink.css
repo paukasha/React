@@ -15,9 +15,12 @@
 
 @media all and (min-width:1024px) {
   .userlink {
-    order: 2;
-    margin-left: 10px;
 
+    margin-left: 10px;
+  }
+
+  .answer__item .userlink {
+    order: 1 !important;
   }
 }
 

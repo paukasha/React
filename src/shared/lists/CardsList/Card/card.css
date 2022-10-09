@@ -1,9 +1,11 @@
 .card {
   position: relative;
-  background-color: var(--white);
   border-radius: 7px;
   flex-flow: row nowrap;
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 200px 1fr repeat(2, max-content);
+  align-items: start;
 }
 
 .card > *, .textContent > * {
@@ -11,11 +13,7 @@
 }
 
 
-
 @media all and (min-width:1024px) {
-  .card {
-    display: flex;
-  }
   .card > *, .textContent > * {
     flex: none;
   }

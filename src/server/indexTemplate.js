@@ -11,11 +11,23 @@ export const indexTemplate = (content, token) => `
     <script>
       window.__token__ = '${token}'
     </script>
+    <style>
+
+  
+
+     </style>
   </head>
 
   <body>
     <div id="react_root">${content}</div>
-    <div id="modal_root"></div>
+    <div id="modal_root" style=" position: fixed;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        max-height: 733px;
+        overflow-y: auto;
+        box-shadow: -2px 4px 10px #80808047;
+        "></div>
   </body>
 
   </html>

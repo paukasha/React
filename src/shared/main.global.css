@@ -26,6 +26,7 @@ body {
   font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: normal;
+  position: relative;
 }
 
 * {
@@ -68,3 +69,5 @@ button {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+

@@ -8,6 +8,10 @@
   text-overflow: ellipsis;
 }
 
+.title__link {
+ cursor: pointer;
+}
+
 @media all and (min-width:1024px) {
   .title {
     order: 0;

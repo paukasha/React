@@ -8,9 +8,9 @@
 
 @media all and (min-width:1024px) {
   .karmaCounter {
-    position: absolute;
-    top: 20px;
-    right: 0;
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*right: 0;*/
     display: flex;
     flex-direction: column;
   }
@@ -36,4 +36,10 @@
   .karmaCounter > button.down:hover > svg > path {
     fill: var(--orange);
   }
+
+
+}
+
+.answer__item .karmaCounter{
+  position: relative;
 }

@@ -9,7 +9,7 @@ interface IPreview {
 
 export function Preview({preview}: IPreview) {
 
-  let image = preview === 'self' ?  image1 : preview
+  let image = preview === 'self' ?  './preview1.png' : preview
 
   return (
     <div className={styles.preview} >

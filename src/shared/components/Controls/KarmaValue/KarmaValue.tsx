@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './karmavalue.css';
 
 interface IKarma {
-  karma: number
+  karma?: number
 }
 
 export function KarmaValue({karma}: IKarma) {

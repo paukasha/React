@@ -17,3 +17,61 @@ h2 {
 p {
   padding: 10px;
 }
+
+
+.answer__item {
+    display: grid;
+    position: relative;
+    grid-template-columns: 20px 1fr;
+    align-items: start;
+  row-gap: 20px;
+}
+
+.stick {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  justify-self: center;
+  height: 100%;
+  width: 3px;
+  background-color: #d9d9d9;
+}
+
+.group_type {
+  width: 114px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  background-color: #d9d9d9;
+  padding: 2px 7px;
+  text-align: center;
+}
+
+.answer {
+  grid-column: 2/4;
+}
+
+.answer__menu {
+    /*grid-row-start: 3;*/
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 20px;
+}
+
+
+.answer__top {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 10px;
+;
+}
+
+.answer__menuitem {
+ display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.answer__form {
+ grid-column: 1/3;
+}
